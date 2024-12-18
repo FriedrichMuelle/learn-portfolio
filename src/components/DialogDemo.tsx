@@ -15,7 +15,12 @@ export function DialogDemo() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline">Edit Profile</Button>
+        <Button 
+          size={'lg'} 
+          className='text-base px-5 py-6'
+        >
+          Edit Profile
+        </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
@@ -47,7 +52,13 @@ export function DialogDemo() {
           </div>
         </div>
         <DialogFooter>
-          <Button type="submit">Save changes</Button>
+          <Button 
+            type="submit"
+            size={'lg'} 
+            className='text-base px-5 py-6'
+          >
+            Save changes
+          </Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>
