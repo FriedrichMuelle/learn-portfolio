@@ -23,7 +23,7 @@ const GithubBtn = () => {
       border-y 
       border-r  
       border-black 
-      hover:bg-primary 
+      hover:bg-gray-700 
       hover:text-white 
       hover:animate-none
     `}>
