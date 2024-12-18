@@ -91,7 +91,7 @@ to connect, collaborate, and code together. Join the conversation and level up y
 
   return (
     // PROJECT PAGE
-    <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden">
+    <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-y-auto">
       <Badge className=" gap-2">
         <Layers className="h-5 w-5" />
         Projects
