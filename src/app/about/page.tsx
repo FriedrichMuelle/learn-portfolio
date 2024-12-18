@@ -13,7 +13,7 @@ const page = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8 min-h-screen">
+    <div className="container mx-auto px-4 py-8 min-h-screen bg-white">
       <Badge className="inline-flex items-center gap-2 mb-6">
         <User2 className="h-5 w-5" />
         About me
