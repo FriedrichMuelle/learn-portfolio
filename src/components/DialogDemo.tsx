@@ -13,7 +13,7 @@ import { Label } from "@/components/ui/label"
 
 export function DialogDemo() {
   return (
-    <div className="h-fit w-full mt-2 py-2">
+    <div className="h-fit min-w-[140px] mt-2 py-2">
     <Dialog>
       <DialogTrigger asChild>
         <Button 

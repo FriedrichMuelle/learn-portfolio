@@ -21,9 +21,11 @@ export default function Home() {
         <div className="h-fit w-full p-4 flex gap-4">
           <SocialLinks />
         </div>
-        <div className="flex gap-0 w-full">
-            <DownLoadResumeBtn/>
-            <DialogDemo/>
+        <div className="flex gap-0 w-full justify-start">
+            <div className="flex gap-3">
+                <DownLoadResumeBtn/>
+                <DialogDemo/>
+            </div>
         </div>
       </FramerWrapper>
       {/* RIGHT SIDE image  */}
