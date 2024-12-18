@@ -10,9 +10,10 @@ export default function HeroTexts() {
         L.C
         <span className="text-blue-500">.</span>
       </h1>
-      <p className="text-2xl font-normal text-gray-700 dark:text-gray-200">
+      {/* <p className="text-2xl font-normal text-gray-700 dark:text-gray-200">
         I am a Software Developer & <span className="text-blue-500">Creator</span>
-      </p>
+      </p> */}
+      <TextRotator />
     </div>
   );
 }
