@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const GithubBtn = () => {
   return (
-    <Link href={"https://github.com/taqui-786"} target="blank" 
+    <Link href={"https://github.com/"} target="blank" 
     className={`
       animate-pulse 
       absolute 
