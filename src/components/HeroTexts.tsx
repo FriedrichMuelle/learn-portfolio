@@ -1,18 +1,18 @@
 import TextRotator from "./TextRotator";
 
- 
-const HeroTexts = () => {
- 
-  
+export default function HeroTexts() {
   return (
-    <>
-      <h3 className="font-poppins text-2xl max-sm:text-xl" >My Name is</h3>
-      <h1 className="font-rubik text-8xl name_underline text-primary max-sm:text-6xl " >
-        Md Taqui <br /> Imam .
+    <div className="flex flex-col gap-2">
+      <h3 className="text-4xl font-normal text-gray-700 dark:text-gray-200">My Name is</h3>
+      <h1 className="text-9xl font-bold text-gray-900 dark:text-white">
+        Mr.
+        <br />
+        L.C
+        <span className="text-blue-500">.</span>
       </h1>
-        <TextRotator/>
-     
-    </>
+      <p className="text-2xl font-normal text-gray-700 dark:text-gray-200">
+        I am a Software Developer & <span className="text-blue-500">Creator</span>
+      </p>
+    </div>
   );
-};
-export default HeroTexts
+}

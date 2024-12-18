@@ -1,5 +1,3 @@
-
-
 import SocialLinks from "@/components/SocialLinks";
 import HeroTexts from "@/components/HeroTexts";
 import HeroImage from "@/components/HeroImage";
@@ -17,7 +15,7 @@ export default function Home() {
   return (
    <>
       {/* LEFT SIDE  */}
-      <FramerWrapper className=" h-full w-auto flex flex-col justify-start gap-4" y={0} x={-100}>
+      <FramerWrapper className="h-full w-auto flex flex-col justify-start gap-4 text-gray-900 dark:text-gray-100" y={0} x={-100}>
         <HeroTexts />
         <div className="h-fit w-full p-4 flex gap-4">
           <SocialLinks />
