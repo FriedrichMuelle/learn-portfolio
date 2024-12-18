@@ -13,6 +13,7 @@ import { Label } from "@/components/ui/label"
 
 export function DialogDemo() {
   return (
+    <div className="h-fit w-full mt-2 py-2 px-4">
     <Dialog>
       <DialogTrigger asChild>
         <Button 
@@ -62,5 +63,6 @@ export function DialogDemo() {
         </DialogFooter>
       </DialogContent>
     </Dialog>
+    </div>
   )
 }
