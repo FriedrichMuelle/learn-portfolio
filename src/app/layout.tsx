@@ -4,6 +4,8 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import { siteConfig } from "./page";
+import { ThemeProvider } from "@/components/theme-provider"
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -89,18 +91,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${poppins.variable} ${rubik.variable}`}>
-        <main
-          className={cn(
-            "flex relative break-words h-dvh min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 bg-white max-sm:pt-20",
-            // Optional: add subtle gradient background
-            // "bg-gradient-to-b from-white to-gray-50"
-          )}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
         >
-          <Navbar />
-          {children}
-        </main>
+          <main
+            className={cn(
+              "flex relative break-words h-dvh min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 bg-background max-sm:pt-20",
+            )}
+          >
+            <Navbar />
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );

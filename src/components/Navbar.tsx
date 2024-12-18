@@ -19,6 +19,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import FramerWrapper from "./animation/FramerWrapper";
 import { usePathname } from "next/navigation";
+import { ThemeToggle } from "@/components/theme-toggle"
 
 const Navbar = () => {
 
@@ -110,6 +111,7 @@ const Navbar = () => {
           </Link>
       ))}
     </Dock>
+    <ThemeToggle />
     </div>
   );
 };

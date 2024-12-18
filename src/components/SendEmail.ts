@@ -14,16 +14,18 @@ export const SendEmail = async (formdata: FormData) => {
       error: "Invalid message",
     };
   }
-  await resend.emails.send({
-    from: "Contact Form <onboarding@resend.dev>",
-    to: `mdtaqui.jhar@gmail.com`,
-    subject: `${name} From Contact Form.`,
-    reply_to: `${SenderEmail}`,
-    text: `sender email: ${SenderEmail} 
-     ${message}`,
-  });
+  try {
+    const data = await resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: `mdtaqui.jhar@gmail.com`,
+      subject: `${name} From Contact Form.`,
+      replyTo: `${SenderEmail}`,
+      text: `sender email: ${SenderEmail} 
+       ${message}`,
+    });
 
-return redirect('/')
- 
-  
+    return data;
+  } catch (error) {
+    return error;
+  }
 };
